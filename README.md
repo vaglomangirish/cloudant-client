@@ -12,3 +12,4 @@ Repository contain code for simple client application for IBM Cloudant DB.
 - Install python prerequisite packages using #pip install -r requirements.txt.
 - Replace db_name, db_doc_name, username and password in test_config.ini file.
 - Execute the test suite by executing #nosetests -v
+- You should see the nosetests suite running automated tests for DB creation, Document creation and Document validation.
