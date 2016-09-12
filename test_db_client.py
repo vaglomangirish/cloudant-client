@@ -39,7 +39,7 @@ class test_db_client:
 
         response = self.client.create_new_database(db_name, username, password)
 
-        assert response.status_code == "201"
+        assert response.status_code == 201
 
 
     def test_create_doc(self):
@@ -54,7 +54,7 @@ class test_db_client:
 
         response = self.client.create_new_doc(db_name, doc_name, username, password)
 
-        assert response.status_code == "201"
+        assert response.status_code == 201
 
 
     def test_validate_doc(self):
@@ -69,4 +69,4 @@ class test_db_client:
 
         response = self.client.get_doc(db_name, doc_name, username, password)
 
-        assert response.status_code == "200"
+        assert response.status_code == 200
