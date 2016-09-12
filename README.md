@@ -7,6 +7,7 @@ Repository contain code for simple client application for IBM Cloudant DB.
 
 ### Steps to Run
 
+- Clone the repository onto your local machine.
 - Change your current working directory to the project directory.
 - Install python prerequisite packages using #pip install -r requirements.txt.
 - Replace db_name, db_doc_name, username and password in test_config.ini file.
