@@ -34,7 +34,7 @@ class db_client:
     """
     def get_doc(self, db_name, doc_name, username, password):
 
-        response = requests.put(self.urlutil.get_doc_url(db_name, username, doc_name),
+        response = requests.get(self.urlutil.get_doc_url(db_name, username, doc_name),
                      auth=(username, password),
                      headers={"content-type": "application/json"},
                      data=json.dumps({"foo": "bar"}))
