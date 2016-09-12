@@ -12,6 +12,7 @@ nosetests -v test/test_db_client.py
 """
 
 import ConfigParser
+import json
 
 from db_client import db_client
 
@@ -39,7 +40,7 @@ class test_db_client:
 
         response = self.client.create_new_database(db_name, username, password)
 
-        print(response)
+        print(response.content)
 
         assert response.status_code == 201
 
@@ -56,7 +57,7 @@ class test_db_client:
 
         response = self.client.create_new_doc(db_name, doc_name, username, password)
 
-        print(response)
+        print(response.content)
 
         assert response.status_code == 201
 
@@ -73,6 +74,6 @@ class test_db_client:
 
         response = self.client.get_doc(db_name, doc_name, username, password)
 
-        print(response)
+        print(response.content)
 
         assert response.status_code == 200
