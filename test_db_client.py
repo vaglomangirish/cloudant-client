@@ -3,11 +3,11 @@ Class that automates testing of creating a database and a database document.
 
 run with
 
-nosetests -v --nocapture test/test_db_client.py
+nosetests -v --nocapture test_db_client.py
 
 or
 
-nosetests -v test/test_db_client.py
+nosetests -v test_db_client.py
 
 """
 
